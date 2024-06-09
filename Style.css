@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ff5722;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+/* Search Styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 60%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1em;
+}
+
+#search-button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 1em;
+}
+
+#search-button:hover {
+    background-color: #e64a19;
+}
+
+/* Movies Container Styles */
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.movie:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.movie img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.movie-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ff5722;
+}
+
+.movie-info p {
+    margin: 5px 0;
+    color: #aaaaaa;
+}
+
+/* Movie Details Styles */
+.movie-details-container {
+    display: none;
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #ffffff;
+}
+
+.movie-details-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie-details-container h2 {
+    margin-top: 0;
+    color: #ff5722;
+}
+
+.movie-details-container p {
+    margin: 10px 0;
+    color: #aaaaaa;
+}

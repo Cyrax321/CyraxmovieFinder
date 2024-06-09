@@ -24,7 +24,7 @@ function displayMovies(movies) {
             <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
             <div class="movie-info">
                 <h3>${movie.title}</h3>
-                <p>${movie.release_date}</p>
+                <p>Release Date: ${movie.release_date}</p>
             </div>
         `;
         movieElement.addEventListener('click', () => fetchMovieDetails(movie.id));
@@ -49,5 +49,7 @@ function displayMovieDetails(movie) {
     movieDetailsContainer.innerHTML = `
         <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
         <h2>${movie.title} (${movie.release_date})</h2>
-        <p><strong>Overview
-        
+        <p>${movie.overview}</p>
+        <p><strong>Rating:</strong> ${movie.vote_average}</p>
+    `;
+}

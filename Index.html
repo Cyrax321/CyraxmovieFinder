@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyraxMovies</title>
+    <title>CyraxmovieFinder</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>CyraxMovies</h1>
+    <header>
+        <h1>CyraxmovieFinder</h1>
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search for movies...">
+            <input type="text" id="search-input" placeholder="Search movies...">
             <button id="search-button">Search</button>
         </div>
-        <div id="movies" class="movies-container"></div>
-        <div id="movie-details" class="movie-details-container"></div>
-    </div>
+    </header>
+
+    <div class="movies-container" id="movies"></div>
+
+    <div class="movie-details-container" id="movie-details"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
